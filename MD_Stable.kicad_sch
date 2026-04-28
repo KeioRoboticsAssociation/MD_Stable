@@ -3867,7 +3867,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Driver_FET:IRS2302S"
+		(symbol "Driver_FET:IR2184"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3880,7 +3880,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "IRS2302S"
+			(property "Value" "IR2184"
 				(at 1.27 11.43 0)
 				(effects
 					(font
@@ -3889,7 +3889,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -3899,7 +3899,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRS2302-DS-v02_01-EN.pdf?fileId=5546d462533600a40153567a87382800"
+			(property "Datasheet" "https://www.infineon.com/dgdl/ir2184.pdf?fileId=5546d462533600a4015355c955e616d4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3908,7 +3908,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Half-Bridge Driver, 600V, 200/350mA, SOIC-8"
+			(property "Description" "Half-Bridge Driver, 600V, 1.4/1.8A, PDIP-8/SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3926,7 +3926,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3935,7 +3935,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "IRS2302S_0_1"
+			(symbol "IR2184_0_1"
 				(rectangle
 					(start -5.08 -10.16)
 					(end 5.08 10.16)
@@ -3948,7 +3948,7 @@
 					)
 				)
 			)
-			(symbol "IRS2302S_1_1"
+			(symbol "IR2184_1_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -3959,7 +3959,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3977,7 +3977,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3995,7 +3995,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4013,7 +4013,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4085,7 +4085,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7231,6 +7231,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+15V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+15V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+15V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+15V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+15V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_names
@@ -7579,131 +7704,6 @@
 				)
 			)
 			(symbol "+5VD_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+8V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+8V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+8V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+8V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+8V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -10891,16 +10891,6 @@
 			(type default)
 		)
 		(uuid "111fac86-3886-47f0-b02e-ac89f64587d4")
-	)
-	(wire
-		(pts
-			(xy 348.615 520.7) (xy 345.44 520.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "114fca14-6802-4706-95dc-67e75fa23ef1")
 	)
 	(wire
 		(pts
@@ -14254,6 +14244,16 @@
 	)
 	(wire
 		(pts
+			(xy 345.44 520.7) (xy 348.615 520.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6715c4e3-0471-41d8-94bd-df3055ce122a")
+	)
+	(wire
+		(pts
 			(xy 59.69 396.24) (xy 60.96 396.24)
 		)
 		(stroke
@@ -16844,16 +16844,6 @@
 	)
 	(wire
 		(pts
-			(xy 348.615 133.35) (xy 345.44 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f4bef06-d3f1-4597-894c-ce4855d8d3fd")
-	)
-	(wire
-		(pts
 			(xy 57.15 401.32) (xy 60.96 401.32)
 		)
 		(stroke
@@ -19201,6 +19191,16 @@
 			(type default)
 		)
 		(uuid "d839cdae-1276-4193-9a5c-3e8d24f5038e")
+	)
+	(wire
+		(pts
+			(xy 345.44 133.35) (xy 348.615 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d83d82be-0624-4621-9c2b-f0cfb1e037eb")
 	)
 	(wire
 		(pts
@@ -24591,6 +24591,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+15V")
+		(at 119.38 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07551024-eb30-4b6b-8345-0d36c56329af")
+		(property "Reference" "#PWR044"
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 119.38 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 119.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5790e29d-f0f4-49a9-b91f-7a1b5a6452e0")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDD")
 		(at 768.35 242.57 0)
 		(unit 1)
@@ -25009,72 +25075,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+8V")
-		(at 337.82 295.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "08e7b989-f4ef-4f88-af13-dcf2e59f5c48")
-		(property "Reference" "#PWR0103"
-			(at 337.82 299.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 337.82 290.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 337.82 295.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 337.82 295.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 337.82 295.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2ea95b47-9c35-43c7-9aaa-7c889e873389")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4007")
 		(at 356.87 495.3 270)
 		(mirror x)
@@ -25373,72 +25373,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "D39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+8V")
-		(at 337.82 491.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d4a4792-d05b-46f4-a159-b334c2468719")
-		(property "Reference" "#PWR0106"
-			(at 337.82 495.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 337.82 486.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 337.82 491.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 337.82 491.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 337.82 491.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b19fb159-969f-4eea-9e32-b8ccedc818cc")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -26139,7 +26073,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 460.248 156.21 0)
 			(effects
 				(font
@@ -26148,7 +26082,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 444.5 161.925 0)
 			(effects
 				(font
@@ -27102,6 +27036,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Driver_FET:IR2184")
+		(at 337.82 513.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cba10c2-5723-4abd-b997-2b4699d6eb11")
+		(property "Reference" "U15"
+			(at 339.9633 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IR2184"
+			(at 339.9633 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 337.82 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/ir2184.pdf?fileId=5546d462533600a4015355c955e616d4"
+			(at 337.82 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Half-Bridge Driver, 600V, 1.4/1.8A, PDIP-8/SOIC-8"
+			(at 337.82 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "e3cc0324-59c9-4181-9ae1-8be6d33a8157")
+		)
+		(pin "4"
+			(uuid "0a3b2986-5935-4610-a3b2-34398adeb863")
+		)
+		(pin "1"
+			(uuid "f32b4c2e-c5f9-46f2-a741-6676dd694eb9")
+		)
+		(pin "5"
+			(uuid "a70e4411-205d-472a-9b36-a955bb5bff36")
+		)
+		(pin "8"
+			(uuid "798076c8-429b-435d-830c-946586a8a730")
+		)
+		(pin "2"
+			(uuid "7232f667-f28b-49c4-a752-46e2050da60c")
+		)
+		(pin "3"
+			(uuid "7db59103-08bc-42f0-b8ed-21901523e248")
+		)
+		(pin "7"
+			(uuid "a9f6032d-3056-49d9-bdfa-d7f68fde3276")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5VD")
 		(at 781.05 222.885 0)
 		(unit 1)
@@ -27766,6 +27789,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+15V")
+		(at 508 490.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20df29b8-6ec2-4478-89e0-85877e8655eb")
+		(property "Reference" "#PWR0121"
+			(at 508 494.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 508 485.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 508 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cffa34a-c317-47cf-b979-8414e4319618")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 290.83 523.875 0)
 		(unit 1)
@@ -28246,93 +28335,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Driver_FET:IRS2302S")
-		(at 337.82 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "240fab8f-7ca4-4b18-9aa8-e4799a708232")
-		(property "Reference" "U13"
-			(at 340.995 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IRS2302S"
-			(at 348.615 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 337.82 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRS2302-DS-v02_01-EN.pdf?fileId=5546d462533600a40153567a87382800"
-			(at 337.82 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 337.82 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "12a81c74-a14a-41a1-a933-72ab9efb2305")
-		)
-		(pin "2"
-			(uuid "95c202f0-c508-4799-beba-d524bf738d7a")
-		)
-		(pin "3"
-			(uuid "9310400b-f57f-4fd3-85cd-9bba4ee37f04")
-		)
-		(pin "4"
-			(uuid "76c2247f-899f-4d0d-bfec-32f93a25a441")
-		)
-		(pin "5"
-			(uuid "32154dcc-7a67-4c32-8bb5-fd7f52ebc0a2")
-		)
-		(pin "6"
-			(uuid "b34268bd-f91a-4be8-b740-63f6bfbfc979")
-		)
-		(pin "7"
-			(uuid "e04e2616-b1b5-4184-b171-467b5261f716")
-		)
-		(pin "8"
-			(uuid "b60a87ed-6535-4a46-8aba-c0a15c4e7406")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "U13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 485.14 76.2 270)
 		(mirror x)
@@ -28623,7 +28625,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 460.248 303.276 0)
 			(effects
 				(font
@@ -28632,7 +28634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 444.5 309.245 0)
 			(effects
 				(font
@@ -28759,94 +28761,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Driver_FET:IRS2302S")
-		(at 508 125.73 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "29403677-c2d7-4218-97d4-a81df5311a4e")
-		(property "Reference" "U17"
-			(at 502.92 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IRS2302S"
-			(at 496.57 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 508 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRS2302-DS-v02_01-EN.pdf?fileId=5546d462533600a40153567a87382800"
-			(at 508 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 508 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f3212081-3bb0-4f28-bc8e-450863561bb5")
-		)
-		(pin "2"
-			(uuid "483d0ef8-744c-4b8c-96f8-973f3d89ed7f")
-		)
-		(pin "3"
-			(uuid "b867af43-5231-4b47-9d8a-0a36df84607e")
-		)
-		(pin "4"
-			(uuid "2dd95207-0fa3-4fa7-be3c-01ee36854cae")
-		)
-		(pin "5"
-			(uuid "69f0ae83-c8f6-4ac8-a405-a9728332cd3e")
-		)
-		(pin "6"
-			(uuid "69aeba18-5754-47c2-8068-86adfcc7a28b")
-		)
-		(pin "7"
-			(uuid "8a86697f-13de-4ebc-af5f-71a5af6a66f7")
-		)
-		(pin "8"
-			(uuid "912f7685-3f9a-447d-9a19-f59d30122837")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "U17")
 					(unit 1)
 				)
 			)
@@ -29208,6 +29122,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Driver_FET:IR2184")
+		(at 337.82 317.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d3fc4c7-d402-4fd1-9c12-ea23fa109331")
+		(property "Reference" "U14"
+			(at 339.9633 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IR2184"
+			(at 339.9633 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 337.82 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/ir2184.pdf?fileId=5546d462533600a4015355c955e616d4"
+			(at 337.82 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Half-Bridge Driver, 600V, 1.4/1.8A, PDIP-8/SOIC-8"
+			(at 337.82 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "9506ab2a-4019-4be9-acb7-db08e1106f00")
+		)
+		(pin "4"
+			(uuid "8e7473f2-87c8-4076-a88a-8424eca82840")
+		)
+		(pin "1"
+			(uuid "b1f4e854-db73-44c1-9f44-494d354f1031")
+		)
+		(pin "5"
+			(uuid "95bc4f11-9cc9-4485-b10d-85d8533cc721")
+		)
+		(pin "8"
+			(uuid "9d7d5fe4-8606-4ac8-a7b3-cf62cc4e1bf8")
+		)
+		(pin "2"
+			(uuid "e47f48b3-4e64-4b58-bd54-37a6f0efd946")
+		)
+		(pin "3"
+			(uuid "99aea4a0-a6e7-4774-b345-a651a6bd15b0")
+		)
+		(pin "7"
+			(uuid "404ab2e7-e791-454c-9ba6-fc746a6222df")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 406.4 311.15 0)
 		(mirror y)
@@ -29428,7 +29430,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 383.794 499.618 0)
 			(effects
 				(font
@@ -29437,7 +29439,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 401.32 504.825 0)
 			(effects
 				(font
@@ -30385,7 +30387,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 383.794 112.268 0)
 			(effects
 				(font
@@ -30394,7 +30396,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 401.32 117.475 0)
 			(effects
 				(font
@@ -30829,6 +30831,95 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_FET:IR2184")
+		(at 508 125.73 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b7fad45-5fef-4cf9-b4b2-3a2fb22cee9a")
+		(property "Reference" "U17"
+			(at 505.8567 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IR2184"
+			(at 505.8567 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 508 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/ir2184.pdf?fileId=5546d462533600a4015355c955e616d4"
+			(at 508 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Half-Bridge Driver, 600V, 1.4/1.8A, PDIP-8/SOIC-8"
+			(at 508 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "fce349f3-e12c-4ad2-877f-000539c40478")
+		)
+		(pin "4"
+			(uuid "7fa6e1bd-8f28-4ace-9139-488088651294")
+		)
+		(pin "1"
+			(uuid "a20904c4-2634-4597-b6f6-307e3f200e2e")
+		)
+		(pin "5"
+			(uuid "4c1f4e1c-70a8-4d83-9c25-c47bd67ef785")
+		)
+		(pin "8"
+			(uuid "eb6893c7-525c-488a-83e0-0f2e66fe0bc5")
+		)
+		(pin "2"
+			(uuid "f6a35943-b95b-4fab-a15a-09d487d1a374")
+		)
+		(pin "3"
+			(uuid "8d1ba004-99b4-48af-846f-20ecb79e73b2")
+		)
+		(pin "7"
+			(uuid "fada6203-783f-4be0-a14d-a61b278d545a")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "U17")
 					(unit 1)
 				)
 			)
@@ -31724,6 +31815,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+15V")
+		(at 406.4 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41c8cb9b-79c0-41b3-afda-089cc2e9cb9e")
+		(property "Reference" "#PWR015"
+			(at 406.4 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 406.4 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 406.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 406.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 406.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "293df3b7-4e92-466d-8e48-25fc26b40809")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5VD")
 		(at 753.11 71.12 0)
 		(unit 1)
@@ -31876,7 +32033,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 460.248 498.856 0)
 			(effects
 				(font
@@ -31885,7 +32042,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 444.5 504.825 0)
 			(effects
 				(font
@@ -32009,93 +32166,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Driver_FET:IRS2302S")
-		(at 337.82 513.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "46a6c043-735f-4983-80be-169e066aea5e")
-		(property "Reference" "U15"
-			(at 340.995 499.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IRS2302S"
-			(at 348.615 501.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 337.82 513.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRS2302-DS-v02_01-EN.pdf?fileId=5546d462533600a40153567a87382800"
-			(at 337.82 513.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 337.82 513.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8aae7153-ef9d-4ba8-a614-0e0755bb5d71")
-		)
-		(pin "2"
-			(uuid "8f88477b-1b09-467d-bced-f68cdc790c6a")
-		)
-		(pin "3"
-			(uuid "58b86d4e-6a7e-484b-8f63-f686130080b9")
-		)
-		(pin "4"
-			(uuid "caa453f9-5b87-481f-95e4-e80b08d68bdc")
-		)
-		(pin "5"
-			(uuid "fac033c2-310f-473d-a290-75c3ae2e0687")
-		)
-		(pin "6"
-			(uuid "022d835a-60fe-4eca-8be1-d6b2d82fefaa")
-		)
-		(pin "7"
-			(uuid "c37a99d5-2184-4314-9375-920536cda1ce")
-		)
-		(pin "8"
-			(uuid "f5e07337-5d53-4f25-a94d-4bff7ae4515a")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -35334,7 +35404,7 @@
 				)
 			)
 		)
-		(property "Value" "NJM7808SDL1"
+		(property "Value" "NJM7815SDL1"
 			(at 38.1 132.08 0)
 			(effects
 				(font
@@ -35870,72 +35940,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+8V")
-		(at 337.82 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "695bef73-8c6b-4507-b1d3-44861687053b")
-		(property "Reference" "#PWR0100"
-			(at 337.82 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 337.82 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 337.82 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 337.82 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 337.82 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c1a4fe9-de7b-43a9-b8f6-f9b1aa0669ff")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -36724,71 +36728,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+8V")
-		(at 119.38 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6f95ca2e-dc1d-445a-b5f2-f1349a41e5eb")
-		(property "Reference" "#PWR044"
-			(at 119.38 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 119.38 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 119.38 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca36f84e-ea24-4202-924d-0f459bc9a4ba")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -38202,6 +38141,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+15V")
+		(at 71.12 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ef51b18-1b7d-48eb-900d-bf4b0d2e6cca")
+		(property "Reference" "#PWR0159"
+			(at 71.12 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 71.12 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 71.12 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f16e3c5b-1136-4668-83a9-266c8410b793")
+		)
+		(instances
+			(project ""
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR0159")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 422.91 93.98 0)
 		(unit 1)
@@ -39003,7 +39008,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 460.248 111.506 0)
 			(effects
 				(font
@@ -39012,7 +39017,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 444.5 117.475 0)
 			(effects
 				(font
@@ -39139,6 +39144,95 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_FET:IR2184")
+		(at 508 513.08 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8526d3ee-55c1-466b-9a81-da2c50797b01")
+		(property "Reference" "U19"
+			(at 505.8567 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IR2184"
+			(at 505.8567 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 508 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/ir2184.pdf?fileId=5546d462533600a4015355c955e616d4"
+			(at 508 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Half-Bridge Driver, 600V, 1.4/1.8A, PDIP-8/SOIC-8"
+			(at 508 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "80645b70-e4b5-4a3b-92ed-f33a077d5dc4")
+		)
+		(pin "4"
+			(uuid "80d73bb1-7ada-4f80-945a-e9058cc802cc")
+		)
+		(pin "1"
+			(uuid "87ac6bea-11dc-4707-96e9-719111c66c20")
+		)
+		(pin "5"
+			(uuid "5ca24c24-7574-40e7-9276-2f78038b7e4c")
+		)
+		(pin "8"
+			(uuid "5ff3a61e-d05a-40cd-8933-fbbbafa3926c")
+		)
+		(pin "2"
+			(uuid "9f1ea9d9-e965-4d66-a97b-53079ee726b4")
+		)
+		(pin "3"
+			(uuid "e48bf422-98c3-4df7-becd-9b1ffd72c406")
+		)
+		(pin "7"
+			(uuid "e7204528-e1e4-4753-8a18-1229023abafd")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "U19")
 					(unit 1)
 				)
 			)
@@ -39758,94 +39852,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Driver_FET:IRS2302S")
-		(at 508 317.5 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "89347853-2967-41e7-8528-7391a3ae7e88")
-		(property "Reference" "U18"
-			(at 502.92 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IRS2302S"
-			(at 496.57 306.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 508 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRS2302-DS-v02_01-EN.pdf?fileId=5546d462533600a40153567a87382800"
-			(at 508 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 508 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "480b7775-d75f-4034-bab3-a8e05ba88146")
-		)
-		(pin "2"
-			(uuid "91a39a58-e3d4-4218-84f7-89d9d57f50ab")
-		)
-		(pin "3"
-			(uuid "26ab9458-adbb-4cc8-8054-267048bd8776")
-		)
-		(pin "4"
-			(uuid "e452fcd7-a629-4d53-ad02-cafe5ad9a168")
-		)
-		(pin "5"
-			(uuid "20bc18a7-4259-47ab-b651-95b340f71000")
-		)
-		(pin "6"
-			(uuid "ac0d0ecf-272a-4875-81fc-323c2e85ae91")
-		)
-		(pin "7"
-			(uuid "b4e9796c-8f17-48e4-9015-177988c9eb19")
-		)
-		(pin "8"
-			(uuid "0d149c31-e345-4978-b07a-4817f039b56f")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "U18")
 					(unit 1)
 				)
 			)
@@ -41866,7 +41872,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 460.248 347.98 0)
 			(effects
 				(font
@@ -41875,7 +41881,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 444.5 353.695 0)
 			(effects
 				(font
@@ -42471,7 +42477,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 383.794 544.068 0)
 			(effects
 				(font
@@ -42480,7 +42486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 401.32 549.275 0)
 			(effects
 				(font
@@ -42623,72 +42629,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+8V")
-		(at 508 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98213442-b9e1-4205-a17e-ad9c6f8ddd8d")
-		(property "Reference" "#PWR0118"
-			(at 508 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 508 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 508 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 508 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 508 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c85f5950-5cc2-48b6-94c3-87d1af601c15")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -43089,6 +43029,95 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_FET:IR2184")
+		(at 508 317.5 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f9afbcf-bf8b-4572-865c-c0bcc67bdf7f")
+		(property "Reference" "U18"
+			(at 505.8567 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IR2184"
+			(at 505.8567 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 508 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/ir2184.pdf?fileId=5546d462533600a4015355c955e616d4"
+			(at 508 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Half-Bridge Driver, 600V, 1.4/1.8A, PDIP-8/SOIC-8"
+			(at 508 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "dba2f7e3-35f4-4540-9e8a-308cd63c01d0")
+		)
+		(pin "4"
+			(uuid "db9b3ff7-5fa9-4848-a8e1-bc44cbb1dc05")
+		)
+		(pin "1"
+			(uuid "85518587-04be-4336-b9ca-5efd85d7ce03")
+		)
+		(pin "5"
+			(uuid "fd1fd6ff-7753-4193-819e-9efed56799cd")
+		)
+		(pin "8"
+			(uuid "7367aa45-4a5d-4cd7-85be-96b03df96080")
+		)
+		(pin "2"
+			(uuid "33a9ccc5-555f-4d0b-b632-f0782513e3a7")
+		)
+		(pin "3"
+			(uuid "cb0c4407-f614-4869-a388-e75d3f167503")
+		)
+		(pin "7"
+			(uuid "68cded56-4312-41a6-a9e2-59181165bcae")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "U18")
 					(unit 1)
 				)
 			)
@@ -44100,6 +44129,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+15V")
+		(at 337.82 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a82fe741-eecd-4c23-9264-aee5213bc484")
+		(property "Reference" "#PWR0100"
+			(at 337.82 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 337.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 337.82 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89f6d2f3-1b5d-4f5e-859f-f27c9b7e9319")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:IRF7606PBF")
 		(at 396.24 307.34 0)
 		(unit 1)
@@ -44117,7 +44212,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 383.794 304.038 0)
 			(effects
 				(font
@@ -44126,7 +44221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 401.32 309.245 0)
 			(effects
 				(font
@@ -44477,72 +44572,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "R49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+8V")
-		(at 508 490.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa9d1c99-17ce-46ec-9a2c-e949568e9644")
-		(property "Reference" "#PWR0124"
-			(at 508 494.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 508 485.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 508 490.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 508 490.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 508 490.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40205ab2-9820-4c45-8da5-d144452ba545")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -46184,93 +46213,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Driver_FET:IRS2302S")
-		(at 337.82 317.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b8b8a2dc-c3a4-4242-86aa-dd5347d3ca74")
-		(property "Reference" "U14"
-			(at 340.995 304.165 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IRS2302S"
-			(at 348.615 306.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 337.82 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRS2302-DS-v02_01-EN.pdf?fileId=5546d462533600a40153567a87382800"
-			(at 337.82 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 337.82 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4194e62f-0284-412c-a93b-9c59ce160a1b")
-		)
-		(pin "2"
-			(uuid "93329472-bd70-47a9-bbff-7c42807bad8e")
-		)
-		(pin "3"
-			(uuid "3328df32-0a7d-4e6c-858e-9214fed3f6e7")
-		)
-		(pin "4"
-			(uuid "b615302c-b9d6-440b-a5f9-9f0c472ba3c5")
-		)
-		(pin "5"
-			(uuid "495b1876-2214-4025-a689-bdbf010483b6")
-		)
-		(pin "6"
-			(uuid "2d670e11-0d7f-4024-9075-4749532a3be3")
-		)
-		(pin "7"
-			(uuid "548ccb19-14b4-457d-b84b-d6e9b156ee9f")
-		)
-		(pin "8"
-			(uuid "c51adc67-5177-4c83-bb2d-584c9b1f371d")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "U14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 508 477.52 0)
 		(unit 1)
@@ -46809,72 +46751,6 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+8V")
-		(at 508 294.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bcd3bf77-47ba-497f-bdc6-ccc1a583deb7")
-		(property "Reference" "#PWR0121"
-			(at 508 298.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 508 289.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 508 294.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 508 294.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 508 294.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "908218bd-330c-4c94-9f6f-d6803a9d85bf")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -49080,72 +48956,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+8V")
-		(at 71.12 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cebadef6-9345-4204-90f4-d472de225d49")
-		(property "Reference" "#PWR015"
-			(at 71.12 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+8V"
-			(at 71.12 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 71.12 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83faab76-74b5-48d9-ad28-badf3c206415")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 360.68 269.24 90)
 		(unit 1)
@@ -49318,7 +49128,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 383.794 348.488 0)
 			(effects
 				(font
@@ -49327,7 +49137,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 401.32 353.695 0)
 			(effects
 				(font
@@ -49999,6 +49809,72 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+15V")
+		(at 337.82 491.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d49e5755-7f11-4d28-8063-594d11d914eb")
+		(property "Reference" "#PWR0106"
+			(at 337.82 495.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 337.82 486.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 491.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 491.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 337.82 491.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c1ec9a5-a9a8-4024-a2d2-422306056002")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -50973,7 +50849,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 383.794 156.718 0)
 			(effects
 				(font
@@ -50982,7 +50858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 401.32 161.925 0)
 			(effects
 				(font
@@ -51888,17 +51764,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+8V")
-		(at 406.4 38.1 0)
+		(lib_id "power:+15V")
+		(at 508 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e1931214-19ec-445c-9ea6-3b52ace05b58")
+		(uuid "e2245a08-7d42-4f51-933f-f6e819f2b49c")
 		(property "Reference" "#PWR0107"
-			(at 406.4 41.91 0)
+			(at 508 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51906,8 +51782,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+8V"
-			(at 406.4 33.02 0)
+		(property "Value" "+15V"
+			(at 508 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51915,7 +51791,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 406.4 38.1 0)
+			(at 508 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51924,7 +51800,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 406.4 38.1 0)
+			(at 508 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51932,8 +51808,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 406.4 38.1 0)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 508 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51942,10 +51818,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "07137170-947e-4950-8f97-04509b745cbb")
+			(uuid "e4fb556f-38fa-45ec-8121-ce9f64444a2b")
 		)
 		(instances
-			(project ""
+			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "#PWR0107")
 					(unit 1)
@@ -52013,6 +51889,95 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_FET:IR2184")
+		(at 337.82 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e37ef8f3-690c-4ce5-a966-54050ca118d8")
+		(property "Reference" "U13"
+			(at 339.9633 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IR2184"
+			(at 339.9633 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 337.82 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/ir2184.pdf?fileId=5546d462533600a4015355c955e616d4"
+			(at 337.82 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Half-Bridge Driver, 600V, 1.4/1.8A, PDIP-8/SOIC-8"
+			(at 337.82 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "7c9e9cf7-a047-474c-8b4d-82bbed6c7001")
+		)
+		(pin "4"
+			(uuid "4a542cbd-57a4-4b20-be62-909f5cef3812")
+		)
+		(pin "1"
+			(uuid "fc87fb97-6bd5-49b9-8098-6875247b066b")
+		)
+		(pin "5"
+			(uuid "0e603592-c007-4b33-a571-096c3dd223c6")
+		)
+		(pin "8"
+			(uuid "e7e7691f-95b3-4cd5-9d2a-cc888d6f738b")
+		)
+		(pin "2"
+			(uuid "a5ac9cb5-b3fb-4488-afb8-fd3f8ee61a12")
+		)
+		(pin "3"
+			(uuid "110468a6-97f0-486e-8cfe-fe3bab9afe40")
+		)
+		(pin "7"
+			(uuid "6feb99b3-b6d2-4dfd-83ef-d370d52eb682")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -54601,6 +54566,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+15V")
+		(at 337.82 295.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f65ba5f5-6cfd-4472-86d6-faf32ff8648a")
+		(property "Reference" "#PWR0103"
+			(at 337.82 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 337.82 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 337.82 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "069c20af-cf0e-46d8-8364-980c0fd97c9e")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 92.71 39.37 0)
 		(unit 1)
@@ -54864,6 +54895,72 @@
 			(project "MD_Stable"
 				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+15V")
+		(at 508 294.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9a2d461-bc69-4b06-84ef-e9c4746e6c17")
+		(property "Reference" "#PWR0118"
+			(at 508 298.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 508 289.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 508 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 508 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 508 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "002d219c-f8e6-4873-a264-d116fe5940e5")
+		)
+		(instances
+			(project "MD_Stable"
+				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -55363,94 +55460,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Driver_FET:IRS2302S")
-		(at 508 513.08 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fcea3398-8c5c-4646-a9cd-d106d3325855")
-		(property "Reference" "U19"
-			(at 502.92 499.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IRS2302S"
-			(at 496.57 501.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 508 513.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IRS2302-DS-v02_01-EN.pdf?fileId=5546d462533600a40153567a87382800"
-			(at 508 513.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 508 513.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "692db600-05db-4cb0-b5d4-46d2d93612fa")
-		)
-		(pin "2"
-			(uuid "b5ca2d32-e947-4a9e-9bb3-0d1e4bd09176")
-		)
-		(pin "3"
-			(uuid "c4aa291f-849e-4089-8b17-fcf3c65cfad2")
-		)
-		(pin "4"
-			(uuid "c3698194-2c75-4078-b693-5d73ebbd7ccc")
-		)
-		(pin "5"
-			(uuid "8cfe0073-86fa-47ac-baea-fc8780570c17")
-		)
-		(pin "6"
-			(uuid "e4b2a3b8-94bf-4dc8-94e8-36e3f8411662")
-		)
-		(pin "7"
-			(uuid "bb431dd5-1122-4f71-99dd-f8b64efba0b0")
-		)
-		(pin "8"
-			(uuid "962838f4-d5b9-40b4-9a42-b017f50f0ce3")
-		)
-		(instances
-			(project "MD_Stable"
-				(path "/3c9b7a20-e029-4fdf-87dd-ccce7ab9baef"
-					(reference "U19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 383.54 53.34 0)
 		(unit 1)
@@ -55761,7 +55770,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPH4R008QM"
+		(property "Value" "AGM028N08A"
 			(at 460.248 543.56 0)
 			(effects
 				(font
@@ -55770,7 +55779,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MyLib:8-SOP Advance (5x5.75)"
+		(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
 			(at 444.5 549.275 0)
 			(effects
 				(font
